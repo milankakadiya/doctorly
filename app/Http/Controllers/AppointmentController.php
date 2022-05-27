@@ -972,4 +972,10 @@ class AppointmentController extends Controller
             return view('error.403');
         }
     }
+	
+	public function insertResult() {
+        $user = Sentinel::getUser();
+        $role = $user->roles[0]->slug;
+        return view('appointment.insert-result', compact('user', 'role'));
+    }
 }

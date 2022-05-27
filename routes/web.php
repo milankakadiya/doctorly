@@ -67,6 +67,7 @@ Route::get('complete-appointment', 'AppointmentController@complete_appointment')
 Route::get('cancel-appointment', 'AppointmentController@cancel_appointment');
 Route::get('today-appointment', 'AppointmentController@today_appointment');
 Route::get('patient-appointment', 'AppointmentController@patient_appointment');
+Route::get('insert-result', 'AppointmentController@insertResult');
 
 // Revenue / Earning / calender
 Route::get('getMonthlyUsersRevenue', 'ReportController@getMonthlyUsersRevenue');
